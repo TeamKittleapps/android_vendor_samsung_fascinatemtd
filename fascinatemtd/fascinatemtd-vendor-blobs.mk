@@ -14,17 +14,13 @@
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \
-    vendor/samsung/fascinatemtd/proprietary/libril.so:obj/lib/libril.so \
     vendor/samsung/fascinatemtd/proprietary/libsecril-client.so:obj/lib/libsecril-client.so
 
 
 # All the blobs necessary for galaxys devices
 PRODUCT_COPY_FILES += \
-    vendor/samsung/fascinatemtd/proprietary/libril.so:system/lib/libril.so \
+    vendor/samsung/fascinatemtd/proprietary/libsec-ril.so:system/vendor/lib/libsec-ril.so \
     vendor/samsung/fascinatemtd/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
-    vendor/samsung/fascinatemtd/proprietary/libsec-ril40.so:system/lib/libsec-ril40.so \
-    vendor/samsung/fascinatemtd/proprietary/rild:system/bin/rild \
-    vendor/samsung/fascinatemtd/proprietary/pppd_runner:system/bin/pppd_runner \
     vendor/samsung/fascinatemtd/proprietary/gpsd:system/vendor/bin/gpsd \
     vendor/samsung/fascinatemtd/proprietary/gps.conf:system/etc/gps.conf \
     vendor/samsung/fascinatemtd/proprietary/gps.aries.so:system/lib/hw/gps.aries.so \
